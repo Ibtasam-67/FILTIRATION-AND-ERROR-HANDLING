@@ -49,12 +49,13 @@ const SideNav = ({ filterByCategory, getAllProducts, minMaxSubmit }) => {
             name="max"
             onChange={handleInputMax}
           ></input>
+          <button className="btn_dis">Apply</button>
 
-          {min <= max ? (
+          {/* {min <= max ? (
             <button className="btn_dis">Apply</button>
           ) : (
             <button className="btn_dis">Disabled</button>
-          )}
+          )} */}
         </form>
       </div>
     </div>

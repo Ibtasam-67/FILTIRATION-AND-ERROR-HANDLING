@@ -35,11 +35,40 @@ const Products = ({ products, error }) => {
                     className="product_img"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">{product.category}</h5>
-                    <p class="card-text">{product.title}</p>
-                    <a href="#" class="btn btn-primary">
-                      {product.price}
-                    </a>
+                    <div>
+                      <h5
+                        class="card-title"
+                        style={{ color: "#0F1111", fontWeight: "500" }}
+                      >
+                        {product.category}
+                      </h5>
+                    </div>
+                    <div>
+                      <p
+                        class="card-text"
+                        style={{
+                          color: "#8E1111",
+                          fontWeight: "100",
+                          fontSize: "18px",
+                          // height: "120px",
+                        }}
+                      >
+                        {product.title}
+                      </p>
+                    </div>
+                    <div className="products_height_set">
+                      <p
+                        style={{
+                          color: "#0F1111",
+                          fontWeight: "800",
+                          // height: "30px",
+                        }}
+                      >
+                        PRICE {product.price}
+                      </p>
+                    </div>
+
+                    {/* <a href="#" class="btn btn-primary"></a> */}
                   </div>
                 </div>
               </div>
