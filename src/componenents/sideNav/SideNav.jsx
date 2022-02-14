@@ -6,12 +6,12 @@ const SideNav = ({ filterByCategory, getAllProducts, minMaxSubmit }) => {
   const [max, setMax] = useState("");
 
   const handleInputMin = (e) => {
-    // console.log(e.target.value);
-    setMin(e.target.value);
+    console.log(e.target.value, "========>min");
+    setMin(Number(e.target.value));
   };
   const handleInputMax = (e) => {
-    // console.log(e.target.value);
-    setMax(e.target.value);
+    console.log(typeof e.target.value, "======>max");
+    setMax(Number(e.target.value));
   };
 
   return (
@@ -37,7 +37,7 @@ const SideNav = ({ filterByCategory, getAllProducts, minMaxSubmit }) => {
             type="number"
             placeholder="Min"
             className="min"
-            // value={min}
+            value={min}
             name="min"
             onChange={handleInputMin}
           ></input>
@@ -45,17 +45,15 @@ const SideNav = ({ filterByCategory, getAllProducts, minMaxSubmit }) => {
             type="number"
             placeholder="Max"
             className="min"
-            // value={max}
+            value={max}
             name="max"
             onChange={handleInputMax}
           ></input>
-          <button className="btn_dis">Apply</button>
-
-          {/* {min <= max ? (
+          {min < max ? (
             <button className="btn_dis">Apply</button>
           ) : (
             <button className="btn_dis">Disabled</button>
-          )} */}
+          )}
         </form>
       </div>
     </div>

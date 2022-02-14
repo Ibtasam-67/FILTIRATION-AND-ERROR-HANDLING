@@ -12,6 +12,7 @@ const App = () => {
   // =========FETCH-PRODUCT-FROM-API========
   const getData = async () => {
     axios.get(`https://fakestoreapi.com/products`).then((res) => {
+      console.table(res.data, "======");
       const products = res.data;
       setProducts(products);
       setFilterResult(products);
@@ -32,7 +33,6 @@ const App = () => {
     setFilterResult(result);
     // console.log(result, "JJ");
   };
-  console.log(products);
   // ======================GET-ALL-PRODUCTS==============
 
   const getAllProducts = () => {
