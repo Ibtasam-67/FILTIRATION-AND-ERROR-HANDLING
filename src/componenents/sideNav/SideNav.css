@@ -3,8 +3,8 @@
   padding: 0;
   width: 220px;
   background-color: #232f3e;
-  height: 60vh;
-  /* overflow: auto; */
+  height: 70vh;
+  overflow: auto;
 }
 
 .sidebar a {
@@ -31,8 +31,9 @@ div.content {
 }
 .pricing {
   display: flex;
-  /* flex-direction: column; */
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-around;
+  /* justify-content: space-between; */
   padding: 10px;
 }
 
@@ -42,6 +43,7 @@ div.content {
   border-radius: 3px;
   border: none;
   padding: 2px 4px;
+  margin-top: 5px;
 }
 
 .btn_apply {
@@ -50,39 +52,27 @@ div.content {
   border-radius: 3px;
   color: grey;
   padding: 2px 4px;
-  width: 24%;
+  width: 20px;
   cursor: pointer !important;
 }
 .btn_dis {
+  /* display: none; */
   background-color: #ffffff;
   border: none;
   border-radius: 3px;
   color: grey;
   padding: 2px 4px;
-  width: 34%;
-  cursor: pointer !important;
+  width: 60px;
+  margin-top: 5px;
+  /* pointer-events: none; */
 }
 
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {
-    float: left;
-  }
-  div.content {
-    margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 969px) {
   .sidebar a {
     text-align: center;
     float: none;
   }
-  /* .pricing {
-    display: none;
-  } */
+  .btn_dis {
+    width: 30%;
+  }
 }

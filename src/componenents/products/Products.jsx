@@ -1,6 +1,6 @@
 import "./Products.css";
 import { BsSearch } from "react-icons/bs";
-
+import { Link } from "react-router-dom";
 const Products = ({ products, error }) => {
   return (
     <>
@@ -27,13 +27,16 @@ const Products = ({ products, error }) => {
 
           {products.map((product) => {
             return (
-              <div class="col-sm-4">
+              <div class="col-sm-4 col-xs-12 ">
                 <div class="card card_height">
-                  <img
-                    src={product.image}
-                    class="card-img-top"
-                    className="product_img"
-                  />
+                  <Link to={`product/${product.id}`}>
+                    <img
+                      src={product.image}
+                      class="card-img-top"
+                      className="product_img"
+                    />
+                  </Link>
+
                   <div class="card-body">
                     <div>
                       <h5
