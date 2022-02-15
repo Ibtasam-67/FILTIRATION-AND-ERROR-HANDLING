@@ -3,6 +3,7 @@ import MainScreen from "./MainScreen";
 import ProductDetails from "./componenents/productDetails/ProductDetails";
 import SignupPage from "./componenents/pages/signupPage/SignupPage";
 import SigninPage from "./componenents/pages/signinPage/SigninPage";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 const App = () => {
   return (

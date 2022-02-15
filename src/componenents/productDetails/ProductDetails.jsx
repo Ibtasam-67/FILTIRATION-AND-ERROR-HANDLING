@@ -2,6 +2,7 @@ import "./ProductDetails.css";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Rings } from "react-loader-spinner";
 
 const ProductDetails = ({}) => {
   const [singleproduct, setSingleproduct] = useState([]);
@@ -76,14 +77,8 @@ const ProductDetails = ({}) => {
           </div>
         </div>
       ) : (
-        <div
-          class="d-flex justify-content-center   "
-          style={{ marginTop: "200px" }}
-        >
-          <div class="spinner-border" role="status">
-            {/* <span>LOADING</span> */}
-          </div>
-          <h1>LOADING.....</h1>
+        <div className="flex justify-center items-center ">
+          <Rings color="#00BFFF" height={400} width={1500} />
         </div>
       )}
     </div>

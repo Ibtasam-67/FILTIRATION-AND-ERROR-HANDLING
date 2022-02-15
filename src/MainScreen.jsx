@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Header from "./componenents/header/Header";
 import SideNav from "./componenents/sideNav/SideNav";
 import Products from "./componenents/products/Products";
+import { Rings } from "react-loader-spinner";
 
 const MainScreen = () => {
   const [products, setProducts] = useState([]);
@@ -92,14 +93,8 @@ const MainScreen = () => {
           </div>
         </div>
       ) : (
-        <div
-          class="d-flex justify-content-center   "
-          style={{ marginTop: "200px" }}
-        >
-          <div class="spinner-border" role="status">
-            {/* <span>LOADING</span> */}
-          </div>
-          <h1>LOADING.....</h1>
+        <div className="flex justify-center items-center ">
+          <Rings color="#00BFFF" height={400} width={1500} />
         </div>
       )}
       <signup />
