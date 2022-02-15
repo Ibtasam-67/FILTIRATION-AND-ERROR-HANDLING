@@ -1,0 +1,4 @@
+.product_detail_cards {
+  display: flex;
+  justify-content: space-evenly;
+}

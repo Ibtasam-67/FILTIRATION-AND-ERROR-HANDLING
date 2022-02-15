@@ -26,6 +26,7 @@ const Products = ({ products, error }) => {
           {error && <h1 style={{ color: "red" }}>error</h1>}
 
           {products.map((product) => {
+            // console.log(product.id, "id");
             return (
               <div class="col-sm-4 col-xs-12 ">
                 <div class="card card_height">
