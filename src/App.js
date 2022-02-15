@@ -2,11 +2,13 @@ import { Routes, Route } from "react-router-dom";
 import MainScreen from "./MainScreen";
 import ProductDetails from "./componenents/productDetails/ProductDetails";
 import SignupPage from "./componenents/pages/signupPage/SignupPage";
+import SigninPage from "./componenents/pages/signinPage/SigninPage";
 
 const App = () => {
   return (
     <>
       <SignupPage />
+      <SigninPage />
       <Routes>
         {/* <Route path="/" element={<MainScreen />} />
         <Route path="/product/:id" element={<ProductDetails />} /> */}
