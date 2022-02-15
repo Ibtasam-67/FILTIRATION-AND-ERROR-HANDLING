@@ -40,10 +40,12 @@ const Header = ({ onChange }) => {
               <AiOutlineShoppingCart />
               Add to Cart
             </a>
-            <a style={{ color: "white" }}>
-              <RiAdminFill />
-              Sign In
-            </a>
+            <Link to="/signin" style={{ textDecoration: "none" }}>
+              <a style={{ color: "white" }}>
+                <RiAdminFill />
+                Sign In
+              </a>
+            </Link>
           </div>
         </div>
       </nav>

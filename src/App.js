@@ -7,10 +7,12 @@ import SigninPage from "./componenents/pages/signinPage/SigninPage";
 const App = () => {
   return (
     <>
-      {/* <SignupPage />
-      <SigninPage /> */}
+      {/* <SignupPage /> */}
+      {/* <SigninPage /> */}
       <Routes>
         <Route path="/" element={<MainScreen />} />
+        <Route path="/signin" element={<SigninPage />} />
+        <Route path="/signup" element={<SignupPage />} />
         <Route path="/product/:id" element={<ProductDetails />} />
       </Routes>
     </>
