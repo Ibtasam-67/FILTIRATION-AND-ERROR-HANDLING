@@ -10,11 +10,14 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 969px) {
   .product_img {
-    margin-left: none;
+    /* margin-left: 90%; */
   }
-  .card_height {
-    /* margin-left: 90px; */
+}
+
+@media (max-width: 800px) {
+  .product_img {
+    margin-left: 15%;
   }
 }

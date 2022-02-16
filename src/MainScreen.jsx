@@ -77,7 +77,7 @@ const MainScreen = () => {
         <div class="row ">
           <Header onChange={onChange} />
 
-          <div class="col-sm-2  mt-5">
+          <div class="col-md-4 mt-5">
             <SideNav
               filterByCategory={filterByCategory}
               getAllProducts={getAllProducts}
@@ -87,8 +87,8 @@ const MainScreen = () => {
               minMaxSubmit={minMaxSubmit}
             />
           </div>
-          <div class="col-sm-1"></div>
-          <div class="col-sm-9 ">
+          {/* <div class="col-md-1"></div> */}
+          <div class="col-md-8">
             <Products products={filterResult} error={error} />
           </div>
         </div>
