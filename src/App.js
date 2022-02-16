@@ -8,8 +8,6 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 const App = () => {
   return (
     <>
-      {/* <SignupPage /> */}
-      {/* <SigninPage /> */}
       <Routes>
         <Route path="/" element={<MainScreen />} />
         <Route path="/signin" element={<SigninPage />} />

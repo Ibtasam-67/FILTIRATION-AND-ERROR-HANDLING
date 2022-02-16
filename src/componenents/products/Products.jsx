@@ -28,7 +28,7 @@ const Products = ({ products, error }) => {
           {products.map((product) => {
             console.log(product.id, "id");
             return (
-              <div class="col-sm-3 col-xs-12 ">
+              <div class="col-sm-4 col-xs-12 ">
                 <div class="card card_height">
                   <Link to={`product/${product.id}`}>
                     <img
