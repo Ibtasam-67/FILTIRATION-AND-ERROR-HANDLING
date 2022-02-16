@@ -4,9 +4,22 @@
   justify-content: space-evenly;
 }
 .detail_image {
+  width: 300px;
+}
+
+@media (max-width: 969px) {
+  .product_detail_cards {
+    /* flex-direction: column; */
+  }
+  .detail_image {
+    width: 50%;
+  }
 }
 @media (max-width: 600px) {
   .product_detail_cards {
     flex-direction: column;
+  }
+  .detail_image {
+    width: 50%;
   }
 }

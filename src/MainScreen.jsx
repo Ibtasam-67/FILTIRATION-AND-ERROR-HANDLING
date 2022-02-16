@@ -74,10 +74,10 @@ const MainScreen = () => {
   return (
     <>
       {loading ? (
-        <div class="row">
+        <div class="row ">
           <Header onChange={onChange} />
 
-          <div class="col-sm-2 mt-5">
+          <div class="col-sm-2  mt-5">
             <SideNav
               filterByCategory={filterByCategory}
               getAllProducts={getAllProducts}

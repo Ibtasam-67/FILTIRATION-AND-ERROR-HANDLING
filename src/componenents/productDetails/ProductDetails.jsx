@@ -33,11 +33,9 @@ const ProductDetails = ({}) => {
   return (
     <div class="container mt-5 ">
       <div class="row">
-        <div class="col-md-6"></div>
-        <div class="col-md-6"></div>
         {loading ? (
           <div className="product_detail_cards ">
-            <div class="card " style={{ width: "400px" }}>
+            <div class="card ">
               <img
                 class="card-img-top"
                 src={singleproduct.image}

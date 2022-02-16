@@ -12,6 +12,7 @@
   color: white;
   padding: 16px;
   text-decoration: none;
+  /* text-align: center; */
 }
 
 .sidebar a.active {
@@ -32,39 +33,26 @@ div.content {
 .pricing {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
-  justify-content: space-evenly;
+  /* align-items: center; */
   padding: 10px;
 }
 
 .min {
-  width: 60px;
   height: 30px;
   border-radius: 3px;
   border: none;
-  padding: 2px 4px;
   margin-top: 5px;
+  width: 70px;
 }
 
-.btn_apply {
-  background-color: #ffffff;
-  border: none;
-  border-radius: 3px;
-  color: grey;
-  padding: 2px 4px;
-  width: 20px;
-  cursor: pointer !important;
-}
 .btn_dis {
-  /* display: none; */
   background-color: #ffffff;
   border: none;
   border-radius: 3px;
   color: grey;
   padding: 2px 4px;
-  width: 60px;
   margin-top: 5px;
-  /* pointer-events: none; */
+  width: 70px;
 }
 
 @media (max-width: 600px) {
@@ -72,14 +60,10 @@ div.content {
     text-align: center;
     float: none;
   }
-  .btn_dis {
-    width: 26%;
+  .pricing {
+    align-items: center;
   }
   .sidebar {
     width: 100%;
-  }
-  .pricing {
-    display: flex;
-    flex-direction: row;
   }
 }
