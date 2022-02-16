@@ -42,7 +42,8 @@ const ProductDetails = ({}) => {
                 class="card-img-top"
                 src={singleproduct.image}
                 alt="Card image"
-                style={{ width: "80%" }}
+                // style={{ width: "80%" }}
+                className="detail_image"
               />
             </div>
             <div style={{ width: "400px" }}>

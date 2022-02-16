@@ -3,6 +3,8 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
+.detail_image {
+}
 @media (max-width: 600px) {
   .product_detail_cards {
     flex-direction: column;
