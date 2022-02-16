@@ -35,42 +35,41 @@ const ProductDetails = ({}) => {
       <div class="row">
         {loading ? (
           <div className="product_detail_cards ">
-            <div class="card ">
-              <img
-                class="card-img-top"
-                src={singleproduct.image}
-                alt="Card image"
-                // style={{ width: "80%" }}
-                className="detail_image"
-              />
+            <div className="card-pic">
+              <div>
+                <img
+                  class="card-img-top"
+                  src={singleproduct.image}
+                  alt="Card image"
+                  // style={{ width: "80%" }}
+                  className="detail_image"
+                />
+              </div>
             </div>
-            <div style={{ width: "400px" }}>
+            <div className="list_group">
               <ul class="list-group">
                 <li class="list-group-item ">
-                  <h4
-                    style={{
-                      color: "#8E1111",
-                      fontWeight: "600",
-                      // fontSize: "18px",
-                      // height: "120px",
-                    }}
-                  >
-                    {singleproduct.title}
-                  </h4>
+                  <h4 className="detail_title">{singleproduct.title}</h4>
                 </li>
-                <li class="list-group-item">
-                  <p>{singleproduct.category}</p>
+                <li class="list-group-item ">
+                  <h3>{singleproduct.category}</h3>
                 </li>
+                <div>
+                  <li class="list-group-item ">
+                    <p className="description">{singleproduct.description}</p>
+                  </li>
+                </div>
+
                 <li class="list-group-item">
-                  <h4
+                  <h3
                     style={{
                       color: "#0F1111",
-                      fontWeight: "800",
+                      fontWeight: "600",
                       // height: "30px",
                     }}
                   >
                     Price:{singleproduct.price}
-                  </h4>
+                  </h3>
                 </li>
               </ul>
               <button type="button" class="btn btn-primary btn-sm mt-5">
