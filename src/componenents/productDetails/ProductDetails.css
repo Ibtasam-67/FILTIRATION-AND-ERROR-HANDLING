@@ -1,4 +1,10 @@
 .product_detail_cards {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
+}
+@media (max-width: 600px) {
+  .product_detail_cards {
+    flex-direction: column;
+  }
 }
